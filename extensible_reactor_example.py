@@ -95,3 +95,11 @@ try:
     plt.show()
 except ImportError:
     print('Matplotlib not found. Unable to plot results.')
+
+    
+    
+#CHALLENGE QUESTION
+#Come up with 3 different ways you could use an extensible reactor 
+#(ex. adding soot/heterogeneous chemistry to model rocket exhaust afterburning). 
+#Then, write some psuedo code (or actual code!) describing how you would 
+#implement one of the ideas.
