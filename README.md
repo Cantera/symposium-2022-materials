@@ -69,11 +69,11 @@ Now you need to create a conda environment with all of the Python packages you w
 conda env create -f environment.yml
 ```
 
-Finally, to run the files for the Workshop, in the same Anaconda Prompt or terminal window, activate the newly created environment and start a Jupyter Notebook server by typing
+Finally, to run the files for the Workshop, in the same Anaconda Prompt or terminal window, activate the newly created environment and start a Jupyter Lab server by typing
 
 ```console
 conda activate ct-workshop
-jupyter notebook
+jupyter lab
 ```
 
 This should automatically open a page in your web browser that shows you the files for the Workshop. We're going to be working from one of the sub-folders in the zip file.
@@ -91,7 +91,7 @@ If you're on Windows, we do have a separate installer for the python.org version
 Once you've got Cantera installed, you'll need to install a few other dependencies. Open a command prompt and type:
 
 ```console
-py -m pip install matplotlib notebook scipy
+py -m pip install matplotlib notebook jupyterlab scipy
 ```
 
 Now, you need to get the materials for the workshop. Head to <https://github.com/Cantera/symposium-2022-materials> (you might already be reading this on that site) and find the "Clone or Download" button. If you have git installed on your computer, you can clone the repository. If you don't, or don't know what cloning means, don't worry! Click the green button, then click "Download ZIP", as shown in the picture below:
@@ -106,12 +106,24 @@ Open your terminal (Linux or macOS) or the Anaconda Prompt (Windows) and use the
 cd Downloads/symposium-2022-materials
 ```
 
-Finally, to run the files for the Workshop start a Jupyter Notebook server by typing:
+Finally, to run the files for the Workshop start a Jupyter Lab server by typing:
 
 ```console
-jupyter notebook
+jupyter lab
 ```
 
 This should automatically open a page in your web browser that shows you the files for the Workshop. We're going to be working from one of the sub-folders in the zip file.
 
 Hooray! You're all set! See you on Friday!
+
+
+### Switching to Jupyter Lab
+
+An earlier version of these instructions had you install Juptyer Notebook instead of Jupyter Lab. 
+This works fine, but is a little older with fewer features. 
+You could either use it, by doing `jupyter notebook` whenever the instructions say `jupyter lab`, 
+or you can install and use Jupyter Lab: if you used Anaconda or Miniconda then do 
+`conda install -c conda-forge jupyterlab` 
+or if you used Pip then do `pip install jupyterlab`. 
+For more installation scenarios see [here](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html).
+
