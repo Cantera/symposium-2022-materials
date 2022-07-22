@@ -6,5 +6,6 @@ find . -name "*.ipynb" -exec jupyter nbconvert \
   --ClearMetadataPreprocessor.enabled=True \
   --ClearMetadataPreprocessor.clear_notebook_metadata=False \
   --ClearMatadataPreprocessor.clear_cell_metadata=True  \
-  --ClearMetadataPreprocessor.preserve_cell_metadata_mask='[("tags"),("scrolled")]' \
+  --ClearMetadataPreprocessor.preserve_cell_metadata_mask 'tags' \
+  --ClearMetadataPreprocessor.preserve_cell_metadata_mask 'scrolled' \
    {} \;
