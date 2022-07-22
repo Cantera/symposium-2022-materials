@@ -1,6 +1,7 @@
 name: ct-workshop
 channels:
   - conda-forge
+  - cantera
 dependencies:
   - cantera=2.6.*
   - numpy
