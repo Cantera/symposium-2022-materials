@@ -1,5 +1,5 @@
 
-find . -name "*.ipynb" -exec jupyter nbconvert \
+find . -name "*.ipynb" -not -path "*/.ipynb_checkpoints/*" -exec jupyter nbconvert \
   --to notebook \
   --execute \
   --inplace \
