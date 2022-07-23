@@ -2,6 +2,7 @@
 find . -name "*.ipynb" -not -path "*/.ipynb_checkpoints/*" -exec jupyter nbconvert \
   --to notebook \
   --execute \
+  --allow-errors \
   --inplace \
   --ClearMetadataPreprocessor.enabled=True \
   --ClearMetadataPreprocessor.clear_notebook_metadata=False \
