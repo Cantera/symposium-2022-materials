@@ -1,7 +1,8 @@
+import multiprocessing
+
 import cantera as ct
 import numpy as np
 import matplotlib.pyplot as plt
-import multiprocessing
 
 def simulation_worker1(sim_tuple):
     '''Takes job index and initial temperature, runs the simulation, and returns ignition delay.
